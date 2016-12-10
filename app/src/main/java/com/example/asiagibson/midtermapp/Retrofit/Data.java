@@ -20,7 +20,7 @@ public class Data {
 
     private List<Records> records;
 
-    // private null previousPage;
+  //  private null previousPage;
 
     private String size;
 
@@ -66,16 +66,16 @@ public class Data {
         this.anchorStr = anchorStr;
     }
 
-    public List<Records> getRecords ()
+    public List<Records>  getRecords ()
     {
         return records;
     }
 
-    public void setRecords (List<Records> records)
+    public void setRecords (List<Records>  records)
     {
         this.records = records;
     }
-
+//
 //    public null getPreviousPage ()
 //    {
 //        return previousPage;
@@ -110,7 +110,6 @@ public class Data {
     public String toString()
     {
         return "ClassPojo [nextPage = "+nextPage+", count = "+count+", backAnchor = "+backAnchor+", anchorStr = "+anchorStr+", records = "+records+", size = "+size+", anchor = "+anchor+"]";
-    }                                                                                                                                             //previousPage = "+previousPage+",
+    }
 }
-//previousPage = "+previousPage+",
 

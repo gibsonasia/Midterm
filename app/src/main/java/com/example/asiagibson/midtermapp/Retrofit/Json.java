@@ -10,152 +10,107 @@ import java.util.List;
  */
 
 public class Json {
+    private String nextPage;
 
-    private String username;
+    private String count;
 
-    private String created;
+    private String backAnchor;
 
-    private String verified;
+    private String anchorStr;
 
-    private String userId;
+    private List<Records> records;
 
-    private String[] vanityUrls;
+    // private null previousPage;
 
-    private User user;
+    private String size;
 
-    private String likeId;
+    private String anchor;
 
-    public String getUsername ()
+    public String getNextPage ()
     {
-        return username;
+        return nextPage;
     }
 
-    public void setUsername (String username)
+    public void setNextPage (String nextPage)
     {
-        this.username = username;
+        this.nextPage = nextPage;
     }
 
-    public String getCreated ()
+    public String getCount ()
     {
-        return created;
+        return count;
     }
 
-    public void setCreated (String created)
+    public void setCount (String count)
     {
-        this.created = created;
+        this.count = count;
     }
 
-    public String getVerified ()
+    public String getBackAnchor ()
     {
-        return verified;
+        return backAnchor;
     }
 
-    public void setVerified (String verified)
+    public void setBackAnchor (String backAnchor)
     {
-        this.verified = verified;
+        this.backAnchor = backAnchor;
     }
 
-    public String getUserId ()
+    public String getAnchorStr ()
     {
-        return userId;
+        return anchorStr;
     }
 
-    public void setUserId (String userId)
+    public void setAnchorStr (String anchorStr)
     {
-        this.userId = userId;
+        this.anchorStr = anchorStr;
     }
 
-    public String[] getVanityUrls ()
+    public List<Records> getRecords ()
     {
-        return vanityUrls;
+        return records;
     }
 
-    public void setVanityUrls (String[] vanityUrls)
+    public void setRecords (List<Records> records)
     {
-        this.vanityUrls = vanityUrls;
+        this.records = records;
     }
 
-    public User getUser ()
+//    public null getPreviousPage ()
+//    {
+//        return previousPage;
+//    }
+//
+//    public void setPreviousPage (null previousPage)
+//    {
+//        this.previousPage = previousPage;
+//    }
+
+    public String getSize ()
     {
-        return user;
+        return size;
     }
 
-    public void setUser (User user)
+    public void setSize (String size)
     {
-        this.user = user;
+        this.size = size;
     }
 
-    public String getLikeId ()
+    public String getAnchor ()
     {
-        return likeId;
+        return anchor;
     }
 
-    public void setLikeId (String likeId)
+    public void setAnchor (String anchor)
     {
-        this.likeId = likeId;
+        this.anchor = anchor;
     }
 
     @Override
     public String toString()
     {
-        return "ClassPojo [username = "+username+", created = "+created+", verified = "+verified+", userId = "+userId+", vanityUrls = "+vanityUrls+", user = "+user+", likeId = "+likeId+"]";
-    }
+        return "ClassPojo [nextPage = "+nextPage+", count = "+count+", backAnchor = "+backAnchor+", anchorStr = "+anchorStr+", records = "+records+", size = "+size+", anchor = "+anchor+"]";
+    }                                                                                                                                             //previousPage = "+previousPage+",
 }
+//previousPage = "+previousPage+",
 
-
-
-//    private String error;
-//
-//    private Data data;
-//
-//    private String code;
-//
-//    private String success;
-//
-//    public String getError ()
-//    {
-//        return error;
-//    }
-//
-//    public void setError (String error)
-//    {
-//        this.error = error;
-//    }
-//
-//    public Data getData ()
-//    {
-//        return data;
-//    }
-//
-//    public void setData (Data data)
-//    {
-//        this.data = data;
-//    }
-//
-//    public String getCode ()
-//    {
-//        return code;
-//    }
-//
-//    public void setCode (String code)
-//    {
-//        this.code = code;
-//    }
-//
-//    public String getSuccess ()
-//    {
-//        return success;
-//    }
-//
-//    public void setSuccess (String success)
-//    {
-//        this.success = success;
-//    }
-//
-//    @Override
-//    public String toString()
-//    {
-//        return "ClassPojo [error = "+error+", data = "+data+", code = "+code+", success = "+success+"]";
-//    }
-//}
-//

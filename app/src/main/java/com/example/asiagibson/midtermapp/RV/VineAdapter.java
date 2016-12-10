@@ -26,7 +26,7 @@ public class VineAdapter extends RecyclerView.Adapter<VineViewHolder> {
 
     @Override
     public void onBindViewHolder(VineViewHolder holder, int position) {
-        VineViewHolder vineHolder = (VineViewHolder) holder;
+        VineViewHolder vineHolder = holder;
         Records records = recordsList.get(position);
         vineHolder.bind(records);
 
@@ -41,6 +41,5 @@ public class VineAdapter extends RecyclerView.Adapter<VineViewHolder> {
         this.recordsList = recordsList;
     }
 
-    public void setRecordsList() {
-    }
+   
 }

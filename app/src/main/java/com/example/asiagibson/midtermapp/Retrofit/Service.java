@@ -10,6 +10,6 @@ import retrofit2.http.GET;
  */
 
 public interface Service {
-    @GET("https://vine.co/api/timelines/users/918753190470619136")
+    @GET("api/timelines/users/918753190470619136/")
     Call<Json> getStuff();
 }

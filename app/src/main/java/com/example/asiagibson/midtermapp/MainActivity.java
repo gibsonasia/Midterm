@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
 
 
-    String link = "https://vine.co/api/timelines/users/";
+    String link = "https://vine.co/";
 //    api/timelines/users/918753190470619136
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<Json> call, Response<Json> response) {
                 try {
                     if (response.isSuccessful()) {
-                     //   adapter.setRecordsList(response.body().setUsername(););
-//                        Log.d(TAG, "Success: " + response.body().getUsername());
-            //            textView.setText(response.body().getUserId());
+                        adapter.setRecordsList(response.body().getRecords());
+                       Log.d(TAG, "Success: " + response.body().getRecords());
+                      //  textView.setText( response.body().g());
                     } else {
                         Log.d(TAG, "Error" + response.errorBody().string());
                     }
